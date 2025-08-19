@@ -13,10 +13,16 @@ on:
 
 jobs:
 
-  build:
-
+  lint:
     runs-on: ubuntu-latest
+    steps:
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
 
+  build:
+    runs-on: ubuntu-latest
     steps:
      - name: Checkout repository
        uses: actions/checkout@v2
