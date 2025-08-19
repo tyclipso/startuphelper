@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:stable-slim
 LABEL author="Jan Opitz <jan.opitz@tyclipso.net>"
 
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
