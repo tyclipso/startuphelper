@@ -10,6 +10,7 @@ This Image is based on a debian slim image and contains the following packages:
 - gpg
 - jq
 - lsb-release
+- nomad
 - vault
 
 ## Example usage
